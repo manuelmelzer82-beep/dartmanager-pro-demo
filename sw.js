@@ -1,5 +1,5 @@
 // DartManager Pro Demo: online-first updates, offline fallback.
-const CACHE = 'dartmanager-demo-v3';
+const CACHE = 'dartmanager-demo-v4';
 const ASSETS = ['./', './index.html', './manifest.webmanifest', './icon.svg'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)));
